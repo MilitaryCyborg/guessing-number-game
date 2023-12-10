@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script defer src="scripts/client.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <h1>Guess A Number!</h1>
+
+  <form>
+    <input type="text" id="playerOneInput" name="playerOneInput" placeholder="Player One's Guess" />
+    <input type="text" id="playerTwoInput" name="playerTwoInput" placeholder="Player Two's Guess" />
+    <input type="text" id="playerThreeInput" name="playerThreeInput" placeholder="Player Three's Guess" />
+
+    <button id="submitButton" onclick="onSubmitHandler(event)">Submit</button>
+  </form>
+
+  <p>Total Guesses:</p>
+  <p id="totalGuessText"></p>
+
+  <h5>Player One</h5>
+  <table id="playerOneTable">
+    <thead>
+      <tr>
+        <th scope="col" id="numberGuessesHeader_P1">Guess</th>
+        <th scope="col" id="guessHeader_P1">Player One Guess</th>
+        <th scope="col" id="answerHeader_P1">Answer</th>
+        <th scope="col" id="messageHeader_P1">Message</th>
+      </tr>
+    </thead>
+    <tbody id="playerOneTB">
+      <tr>
+        <td headers="numberGuessesHeader_P1">1</td>
+        <td headers="guessHeader_P1">23</td>
+        <td headers="answerHeader_P1">25</td>
+        <td headers="messageHeader_P1">?</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h5>Player Two</h5>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col" id="numberGuessesHeader_P1">Guess</th>
+        <th scope="col" id="guessHeader_P1">Player Two Guess</th>
+        <th scope="col" id="answerHeader_P1">Answer</th>
+        <th scope="col" id="messageHeader_P1">Message</th>
+      </tr>
+    </thead>
+    <tbody id="playerTwoTB">
+      <tr>
+        <td headers="numberGuessesHeader_P2">1</td>
+        <td headers="guessHeader_P2">23</td>
+        <td headers="answerHeader_P2">25</td>
+        <td headers="messageHeader_P2">?</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h5>Player Three</h5>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col" id="numberGuessesHeader_P3">Guess</th>
+        <th scope="col" id="guessHeader_P3">Player Three Guess</th>
+        <th scope="col" id="answerHeader_P3">Answer</th>
+        <th scope="col" id="messageHeader_P3">Message</th>
+      </tr>
+    </thead>
+    <tbody id="playerThreeTB">
+      <tr>
+        <td headers="numberGuessesHeader_P3">1</td>
+        <td headers="guessHeader_P3">23</td>
+        <td headers="answerHeader_P3">25</td>
+        <td headers="messageHeader_P3">?</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
